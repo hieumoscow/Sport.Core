@@ -1,8 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Newtonsoft.Json;
 
-namespace Sport.Service.Models
+namespace Sport.Service.ViewModels
 {
     // Models used as parameters to AccountController actions.
 
@@ -48,6 +47,11 @@ namespace Sport.Service.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        public string PhoneNumber { get; set; }
+        public string Firstname { get; set; }
+        public DateTime? Dob { get; set; }
+        public bool Gender { get; set; }
     }
 
     public class RegisterExternalBindingModel

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="vi-VN" original="SPORT.SERVICE/STRINGS/RESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="SPORT.SERVICE/STRINGS/RESOURCES.RESX" datatype="resx">
+        <trans-unit id="Error_EmailUnvaild" translate="yes" xml:space="preserve">
+          <source>Please enter a valid email</source>
+          <target state="new">Please enter a valid email</target>
+        </trans-unit>
+        <trans-unit id="Error_InvalidToken" translate="yes" xml:space="preserve">
+          <source>Invalid token</source>
+          <target state="new">Invalid token</target>
+        </trans-unit>
+        <trans-unit id="Error_MissingParam" translate="yes" xml:space="preserve">
+          <source>Missing content</source>
+          <target state="new">Missing content</target>
+        </trans-unit>
+        <trans-unit id="Language" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="new">en-US</target>
+        </trans-unit>
+        <trans-unit id="Register_EmailExisted" translate="yes" xml:space="preserve">
+          <source>Email already exists</source>
+          <target state="new">Email already exists</target>
+        </trans-unit>
+        <trans-unit id="Register_EmailRequired" translate="yes" xml:space="preserve">
+          <source>Please enter a valid email</source>
+          <target state="new">Please enter a valid email</target>
+        </trans-unit>
+        <trans-unit id="Register_FirstNameRequired" translate="yes" xml:space="preserve">
+          <source>Please enter your first name</source>
+          <target state="new">Please enter your first name</target>
+        </trans-unit>
+        <trans-unit id="Register_LastNameRequired" translate="yes" xml:space="preserve">
+          <source>Please enter your last name</source>
+          <target state="new">Please enter your last name</target>
+        </trans-unit>
+        <trans-unit id="Register_NameRequired" translate="yes" xml:space="preserve">
+          <source>Please enter your first name</source>
+          <target state="new">Please enter your first name</target>
+        </trans-unit>
+        <trans-unit id="Register_PassRequired" translate="yes" xml:space="preserve">
+          <source>The password must be at least 6 characters long.</source>
+          <target state="new">The password must be at least 6 characters long.</target>
+        </trans-unit>
+        <trans-unit id="Register_PhoneExisted" translate="yes" xml:space="preserve">
+          <source>Phone number already exists</source>
+          <target state="new">Phone number already exists</target>
+        </trans-unit>
+        <trans-unit id="Register_PhoneRequired" translate="yes" xml:space="preserve">
+          <source>Please enter your phone number</source>
+          <target state="new">Please enter your phone number</target>
+        </trans-unit>
+        <trans-unit id="Register_PhoneVerified" translate="yes" xml:space="preserve">
+          <source>Phone number not verified</source>
+          <target state="new">Phone number not verified</target>
+        </trans-unit>
+        <trans-unit id="Register_TokenRequired" translate="yes" xml:space="preserve">
+          <source>Verification code is required</source>
+          <target state="new">Verification code is required</target>
+        </trans-unit>
+        <trans-unit id="Register_UserNotFound" translate="yes" xml:space="preserve">
+          <source>Could not find user</source>
+          <target state="new">Could not find user</target>
+        </trans-unit>
+        <trans-unit id="User_ResetNoInfo" translate="yes" xml:space="preserve">
+          <source>Please enter email or phone number</source>
+          <target state="new">Please enter email or phone number</target>
+        </trans-unit>
+        <trans-unit id="Register_SmsFailed" translate="yes" xml:space="preserve">
+          <source>Couldn't send an SMS to your phone</source>
+          <target state="new">Couldn't send an SMS to your phone</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en" target-language="vi-VN" original="SPORT.SERVICE/MIGRATIONS/201603291347361_DBINIT.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="SPORT.SERVICE/MIGRATIONS/201603291347361_DBINIT.RESX" datatype="resx">
+        <trans-unit id="Target" translate="yes" xml:space="preserve">
+          <source>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</source>
+          <target state="new">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</target>
+        </trans-unit>
+        <trans-unit id="DefaultSchema" translate="yes" xml:space="preserve">
+          <source>dbo</source>
+          <target state="new">dbo</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -13,6 +13,7 @@ using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using Sport.Service.Areas.HelpPage.ModelDescriptions;
 using Sport.Service.Areas.HelpPage.Models;
+using Sport.Service.Areas.HelpPage.SampleGeneration;
 
 namespace Sport.Service.Areas.HelpPage
 {

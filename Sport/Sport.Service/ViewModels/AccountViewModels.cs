@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Sport.Service.Models
+namespace Sport.Service.ViewModels
 {
     // Models returned by AccountController actions.
 

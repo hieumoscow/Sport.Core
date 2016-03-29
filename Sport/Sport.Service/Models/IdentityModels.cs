@@ -1,8 +1,9 @@
-﻿using System.Security.Claims;
+﻿using System;
+using System.Data.Entity;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity.Owin;
 
 namespace Sport.Service.Models
 {
@@ -16,6 +17,12 @@ namespace Sport.Service.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public bool Gender { get; set; }
+        public string AvatarUrl { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public DateTime? Dob { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -28,6 +35,17 @@ namespace Sport.Service.Models
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ApplicationUser>().ToTable("Users");
+            modelBuilder.Entity<IdentityRole>().ToTable("Roles");
+            modelBuilder.Entity<IdentityUserClaim>().ToTable("UserClaims");
+            modelBuilder.Entity<IdentityUserLogin>().ToTable("UserLogins");
+            modelBuilder.Entity<IdentityUserRole>().ToTable("UserRoles");
         }
     }
 }
