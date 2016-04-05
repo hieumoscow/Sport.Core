@@ -10,6 +10,10 @@ namespace Sport.Core
     }
     public class App : MvvmCross.Core.ViewModels.MvxApplication
     {
+        private static Data _data;
+
+        public static Data Data => _data ?? (_data = new Data());
+
         public static Platform Platform { get; set; }
         public App(Platform platform)
         {
