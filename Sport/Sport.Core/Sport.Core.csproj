@@ -37,11 +37,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="AppStart.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Exceptions\ApiException.cs" />
     <Compile Include="Exceptions\NoInternetConnection.cs" />
     <Compile Include="Models\EndPoints\ApiResponse.cs" />
     <Compile Include="Models\EndPoints\Response.cs" />
+    <Compile Include="Models\ListItem.cs" />
     <Compile Include="Models\Settings.cs" />
     <Compile Include="Mvvm\MyMvxViewModel.cs" />
     <Compile Include="Mvvm\Validation\TextValue.cs" />
@@ -50,9 +52,12 @@
     <Compile Include="Services\FileService.cs" />
     <Compile Include="Services\HttpService.cs" />
     <Compile Include="Services\Interfaces\IAuthService.cs" />
+    <Compile Include="Services\Interfaces\IDialogService.cs" />
     <Compile Include="Services\Interfaces\IFileService.cs" />
     <Compile Include="Services\Interfaces\IHttpService.cs" />
+    <Compile Include="Services\Interfaces\ILoginService.cs" />
     <Compile Include="Services\Interfaces\IMessageService.cs" />
+    <Compile Include="Services\LoginService.cs" />
     <Compile Include="Services\RestService.cs" />
     <Compile Include="Models\EndPoints\Session.cs" />
     <Compile Include="Strings\AppResources.Designer.cs">
@@ -60,7 +65,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\FirstViewModel.cs" />
+    <Compile Include="ViewModels\Android\ExampleRecyclerViewModel.cs" />
+    <Compile Include="ViewModels\Android\ExampleViewPagerViewModel.cs" />
+    <Compile Include="ViewModels\Android\RecyclerViewModel.cs" />
+    <Compile Include="ViewModels\Base\MainViewModel.cs" />
+    <Compile Include="ViewModels\Help\HelpAndFeedbackViewModel.cs" />
+    <Compile Include="ViewModels\Home\HomeViewModel.cs" />
+    <Compile Include="ViewModels\Home\InfoViewModel.cs" />
+    <Compile Include="ViewModels\Home\ThirdViewModel.cs" />
+    <Compile Include="ViewModels\Login\LoginViewModel.cs" />
+    <Compile Include="ViewModels\Menu\MenuViewModel.cs" />
+    <Compile Include="ViewModels\Settings\SettingsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -115,6 +130,7 @@
       <Name>Sport.Shared</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

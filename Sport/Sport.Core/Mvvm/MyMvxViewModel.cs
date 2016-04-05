@@ -18,7 +18,7 @@ namespace Sport.Core.Mvvm
         public IMvxLanguageBinder TextSource => new MvxLanguageBinder("", GetType().Name);
         public string this[string index] => AppResources.ResourceManager.GetString(index);
     }
-    public class MyMvxViewModel : MvxViewModel
+    public class BaseViewModel : MvxViewModel
     {
         private string _title;
 

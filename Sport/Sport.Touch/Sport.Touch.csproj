@@ -91,17 +91,32 @@
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Services\TouchDialogService.cs" />
     <Compile Include="Setup.cs" />
-    <Compile Include="Views\FirstView.cs" />
-    <Compile Include="Views\FirstView.designer.cs" />
+    <Compile Include="Views\Base\BaseViewController.cs" />
+    <Compile Include="Views\Base\MainView.cs" />
+    <Compile Include="Views\Help\HelpView.cs" />
+    <Compile Include="Views\Home\HomeView.cs" />
+    <Compile Include="Views\Home\InfoView.cs" />
+    <Compile Include="Views\Home\ThirdView.cs" />
+    <Compile Include="Views\Login\LoginView.cs" />
+    <Compile Include="Views\Menu\MenuView.cs" />
+    <Compile Include="Views\Settings\SettingsView.cs" />
     <None Include="app.config" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <None Include="packages.config" />
-    <InterfaceDefinition Include="Views\FirstView.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Cirrious.FluentLayouts.Touch, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrious.FluentLayout.2.5.0\lib\Xamarin.iOS10\Cirrious.FluentLayouts.Touch.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JASidePanels, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.iOS.Support.JASidePanels.4.1.1\lib\Xamarin.iOS10\JASidePanels.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmCross.Binding.4.1.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
       <Private>True</Private>
@@ -116,6 +131,14 @@
     </Reference>
     <Reference Include="MvvmCross.iOS, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmCross.Core.4.1.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support, Version=1.0.5938.29903, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.iOS.Support.4.1.1\lib\Xamarin.iOS10\MvvmCross.iOS.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.iOS.Support.JASidePanels, Version=1.0.5938.29906, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.iOS.Support.JASidePanels.4.1.1\lib\Xamarin.iOS10\MvvmCross.iOS.Support.JASidePanels.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.Localization, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
