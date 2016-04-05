@@ -95,7 +95,6 @@
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\FirstView.designer.cs" />
     <None Include="app.config" />
-    <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -157,7 +156,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppDelegate.cs.txt" />
     <Content Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
